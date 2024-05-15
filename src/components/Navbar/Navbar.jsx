@@ -1,10 +1,21 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 import logo from '../../assets/Logos/svg/logo-no-background.svg'
 
 import styles from './Navbar.module.css'
 
 function Navbar() {
+  const [activePage, setActivePage] = useState('')
+  const location = useLocation()
+
+  useEffect(() => {
+    const path = location.pathname
+    console.log(path)
+
+    setActivePage(path)
+  }, [location.pathname])
+
   return (
     <header className={styles.navbar_container}>
       <Link to="/">
@@ -12,10 +23,10 @@ function Navbar() {
       </Link>
       <nav className={styles.nav_container}>
         <ul className={styles.nav_links}>
-          <li>
+          <li className={activePage === '/about' ? styles.active : ''}>
             <Link to="/about">Sobre</Link>
           </li>
-          <li>
+          <li className={activePage === '/projects' ? styles.active : ''}>
             <Link to="/projects">Projetos</Link>
           </li>
         </ul>
