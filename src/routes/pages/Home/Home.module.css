@@ -1,1 +1,164 @@
-/* setup */
+.home_container {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 64px;
+}
+
+.name_container {
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.name_container h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+}
+
+.name_container p {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: -8px;
+}
+
+.main_information {
+  display: flex;
+  margin-top: 40px;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.face_card {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.nav_links li {
+  padding: 10px 0;
+}
+
+.nav_links svg {
+  margin-right: 16px;
+}
+
+.nav_links li a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  opacity: 1;
+}
+
+.description {
+  margin-top: 30px;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+.description p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+.skills_container h1 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.skills_container h2 {
+  width: 20%;
+  font-size: 1rem;
+  margin-right: 10px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.skills_container p {
+  font-size: 1rem;
+}
+
+.skill {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  animation: alignAnimation 1s forwards;
+  animation-delay: 5s;
+  opacity: 0;
+}
+
+/* Animations */
+
+@keyframes dropAnimationReverse {
+  0% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes alignAnimation {
+  0% {
+    transform: translateX(100px);
+}
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+
+@media (max-width: 760px) {
+  .home_container {
+    padding: 0px 40px;
+  }
+
+  .name_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main_information {
+    justify-content: center;
+  }
+
+  .skill {
+    flex-direction: column;
+  }
+}
