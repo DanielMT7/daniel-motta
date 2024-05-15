@@ -6,6 +6,7 @@
   height: 80px;
   max-width: 680px;
   padding: 12px 20px;
+  animation: dropAnimation 1s forwards;
 }
 
 .navbar_container img {
@@ -42,6 +43,18 @@
   opacity: 1;
 }
 
+/* Animations */
+
+@keyframes dropAnimation {
+  0% {
+      transform: translateY(-200px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
 
 @media (max-width: 600px) {
   .navbar_container {
