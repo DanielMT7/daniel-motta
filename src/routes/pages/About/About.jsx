@@ -32,23 +32,13 @@ function About() {
         </p>
 
         <p style={{ animationDelay: '4.1s' }}>
-          Atualmente, dedico meu tempo livre ao desenvolvimento de um projeto
-          pessoal que une minha paixão pela tecnologia e pela moda. Minha missão
-          é criar uma aplicação inovadora que não apenas celebre o estilo único
-          dos artistas brasileiros, mas também simplifique a experiência de
-          compra para os usuários. Por meio de fotos envolventes e informações
-          detalhadas, os usuários poderão mergulhar no universo da moda
-          nacional, descobrindo peças exclusivas e os locais onde adquiri-las.
-        </p>
-
-        <p style={{ animationDelay: '4.8s' }}>
           Hoje, como principais ferramentas de desenvolvimento, JavaScript e
           React ocupam lugar de destaque. Estou sempre em busca de aprimorar
           minhas habilidades e explorar novas tecnologias que possam melhorar o
           meu conhecimento técnico a novos patamares de excelência.
         </p>
 
-        <p style={{ animationDelay: '5.5s' }}>
+        <p style={{ animationDelay: '4.8s' }}>
           Estou aberto a novas oportunidades como desenvolvedor front-end e
           ansioso para colaborar com profissionais e empresas que compartilham
           minha paixão pelo desenvolvimento web. Vamos unir forças para criar

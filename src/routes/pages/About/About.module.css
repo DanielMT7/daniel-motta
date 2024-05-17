@@ -1,7 +1,7 @@
 .about_container {
   width: 100%;
   max-width: 680px;
-  margin-top: 64px;
+  margin-top: 36px;
 }
 
 .about{
@@ -32,6 +32,7 @@
 }
 
 .experience {
+  width: 100%;
   animation: dropAnimation 1s forwards;
   animation-delay: 6.5s;
   opacity: 0;
@@ -60,5 +61,18 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .about_container {
+    padding: 0 40px;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
