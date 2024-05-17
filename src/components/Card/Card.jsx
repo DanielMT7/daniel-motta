@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
-import globo from '../../assets/globo.jpg'
-import globo_video from '../../assets/globo.mp4'
+import globo from '../../assets/Globo/globo.jpg'
+import globo_video from '../../assets/Globo/globo.mp4'
 
 import styles from './Card.module.css'
 
