@@ -65,6 +65,7 @@
 }
 
 .button_action:hover {
+  cursor: pointer;
   box-shadow: 0 0 12px rgba(255,255, 255, 0.5);
   opacity: 1;
 }
@@ -83,9 +84,10 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 600px;
+  height: auto;
   background-image: linear-gradient(to bottom right, #FF1925, #FFA81D 22%, #FFA81D 60%, #FF2F3A);
-  border-radius: 2%;
+  border-radius: 20px;
+  padding: 20px 0;
 }
 
 .assignments {
@@ -197,6 +199,7 @@
     width: 100%;
     margin-bottom: 20px;
     background-image: none;
+    padding: 0;
   }
 
   .assignments {
