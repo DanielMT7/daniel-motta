@@ -1,17 +1,18 @@
 .about_container {
   width: 100%;
   max-width: 680px;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .about{
-  animation: dropAnimation 1s forwards;
+  animation: dropAnimationReverse 1s forwards;
   animation-delay: 1s;
   opacity: 0;
+  margin-bottom: 26px;
 }
 
 .about h1 {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 2.8rem;
   
@@ -21,11 +22,10 @@
   font-size: 1rem;
   opacity: 0.7;
   margin-top: -8px;
-  margin-bottom: 30px;
 }
 
 .text p {
-  animation: dropAnimation 1s forwards;
+  animation: dropAnimationReverse 1s forwards;
   opacity: 0;
   text-align: justify;
   margin-bottom: 20px;
@@ -33,17 +33,17 @@
 
 .experience {
   width: 100%;
-  animation: dropAnimation 1s forwards;
-  animation-delay: 6.5s;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 3.4s;
   opacity: 0;
   margin-bottom: 50px;
 }
 
 .experience_title {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 2.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .experience_description {
@@ -53,14 +53,13 @@
 
 /* animations */
 
-@keyframes dropAnimation {
+@keyframes dropAnimationReverse {
   0% {
-    transform: translateY(-30px);
+      transform: translateY(50px);
   }
-  
   100% {
-    transform: translateY(0);
-    opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
   }
 }
 
