@@ -55,8 +55,6 @@ function Card() {
     )
   }
 
-  console.log(isOpen)
-
   return (
     <div className={styles.card_container}>
       <div className={styles.card}>
