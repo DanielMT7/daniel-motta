@@ -1,1 +1,83 @@
-/* setup */
+.projects_container {
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 32px;
+}
+
+.project {
+  margin-bottom: 32px;
+}
+
+.projects_label {
+  margin-bottom: 32px;
+}
+
+.projects_label h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+}
+
+.projects_label p {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: -8px;
+}
+
+.project_name {
+  padding-left: 6px;
+  margin-bottom: 26px;
+}
+
+.project_name h2 {
+  font-size: 1.5rem;
+}
+
+.project_name p {
+  text-align: justify;
+}
+
+.project_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tags p {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 6px;
+  border-radius: 12px;
+}
+
+
+@media (max-width: 760px) {
+  .projects_container {
+
+    padding: 0 40px;
+  }
+
+  .projects_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project_name h2 {
+    text-align: center;
+  }
+
+}
