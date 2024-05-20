@@ -1,8 +1,14 @@
-import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFileAlt,
+  FaExternalLinkAlt
+} from 'react-icons/fa'
 
 import { skills } from '../../../data/mock'
 
 import perfil from '../../../assets/me.jpeg'
+import curriculum from '../../../assets/daniel-motta-cv.pt-br.pdf'
 
 import styles from './Home.module.css'
 
@@ -32,7 +38,7 @@ function Home() {
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
+            <a href={curriculum} target="_blank">
               <FaFileAlt size={20} /> Currículo
             </a>
           </li>
@@ -49,6 +55,14 @@ function Home() {
           por desenvolvimento web e segurança da informação, e estou sempre
           estudando e em busca de aprimoramento profissional.
         </p>
+      </div>
+
+      <div className={styles.email}>
+        <a href="mailto:danielmotta04@hotmail.com">
+          <button>
+            <FaExternalLinkAlt size={16} className={styles.email_to} /> E-mail
+          </button>
+        </a>
       </div>
 
       <div className={styles.skills_container}>
