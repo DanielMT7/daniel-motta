@@ -1,13 +1,14 @@
 .home_container {
   width: 100%;
   max-width: 680px;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .name_container {
   animation: dropAnimationReverse 1s forwards;
   animation-delay: 1s;
   opacity: 0;
+  margin-bottom: 26px;
 }
 
 .name_container h1 {
@@ -24,10 +25,10 @@
 
 .main_information {
   display: flex;
-  margin-top: 40px;
   animation: dropAnimationReverse 1s forwards;
-  animation-delay: 2s;
+  animation-delay: 1.6s;
   opacity: 0;
+  margin-bottom: 26px;
 }
 
 .face_card {
@@ -41,7 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 30px;
+  margin-left: 32px;
   list-style: none;
 }
 
@@ -69,9 +70,9 @@
 }
 
 .description {
-  margin-top: 30px;
+  margin-bottom: 26px;
   animation: dropAnimationReverse 1s forwards;
-  animation-delay: 3s;
+  animation-delay: 2.2s;
   opacity: 0;
 }
 
@@ -83,9 +84,9 @@
 .skills_container {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-bottom: 26px;
   animation: dropAnimationReverse 1s forwards;
-  animation-delay: 4s;
+  animation-delay: 2.8s;
   opacity: 0;
 }
 
@@ -114,7 +115,7 @@
   margin-bottom: 6px;
   border-radius: 10px;
   animation: alignAnimation 1s forwards;
-  animation-delay: 5s;
+  animation-delay: 3.4s;
   opacity: 0;
 }
 

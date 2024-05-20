@@ -1,4 +1,7 @@
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
+
+import { skills } from '../../../data/mock'
+
 import perfil from '../../../assets/me.jpeg'
 
 import styles from './Home.module.css'
@@ -50,26 +53,16 @@ function Home() {
 
       <div className={styles.skills_container}>
         <h1>Habilidades</h1>
-
-        <div className={styles.skill}>
-          <h2>Programação</h2>
-          <p>JavaScript, TypeScript, Node.js, Python, C, C++</p>
-        </div>
-
-        <div className={styles.skill} style={{ animationDelay: '5.7s' }}>
-          <h2>FrontEnd</h2>
-          <p>React, HTML5, CSS3, Bootstrap</p>
-        </div>
-
-        <div className={styles.skill} style={{ animationDelay: '6.4s' }}>
-          <h2>BackEnd</h2>
-          <p>REST API, Express, PostgreSQL, MongoDB</p>
-        </div>
-
-        <div className={styles.skill} style={{ animationDelay: '7.1s' }}>
-          <h2>Línguas</h2>
-          <p>Português Brasileiro, Inglês</p>
-        </div>
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className={styles.skill}
+            style={{ animationDelay: skill.animationDelay }}
+          >
+            <h2>{skill.category}</h2>
+            <p>{skill.details}</p>
+          </div>
+        ))}
       </div>
     </div>
   )
