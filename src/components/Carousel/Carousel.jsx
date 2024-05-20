@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 
 import styles from './Carousel.module.css'
 
-function Carousel({ data }) {
+function Carousel({ data, metadata }) {
   const [slide, setSlide] = useState(0)
 
   const nextSlide = () => {
@@ -16,30 +17,39 @@ function Carousel({ data }) {
 
   return (
     <div className={styles.carousel}>
-      <FaChevronCircleLeft
-        onClick={prevSlide}
-        className={`${styles.arrow} ${styles.arrow_left}`}
-      />
+      {data.length > 1 ? (
+        <FaChevronCircleLeft
+          onClick={prevSlide}
+          className={`${styles.arrow} ${styles.arrow_left}`}
+        />
+      ) : null}
 
       {data.map((item, index) => {
         return (
-          <img
-            src={item}
-            alt="Whats on The Star Image"
+          <div
             key={index}
             className={
               slide === index
-                ? styles.slide
-                : `${styles.slide} ${styles.slide_hidden}`
+                ? styles.slideWrapper
+                : `${styles.slideWrapper} ${styles.slide_hidden}`
             }
-          />
+          >
+            <img src={item} alt="Carousel Image" className={styles.slide} />
+            <div className={styles.metadata}>
+              <p>{metadata.about1}</p>
+              <p>{metadata.about2}</p>
+              <p>{metadata.about3}</p>
+            </div>
+          </div>
         )
       })}
 
-      <FaChevronCircleRight
-        onClick={nextSlide}
-        className={`${styles.arrow} ${styles.arrow_right}`}
-      />
+      {data.length > 1 ? (
+        <FaChevronCircleRight
+          onClick={nextSlide}
+          className={`${styles.arrow} ${styles.arrow_right}`}
+        />
+      ) : null}
 
       <span className={styles.indicators}>
         {data.map((_, index) => {
