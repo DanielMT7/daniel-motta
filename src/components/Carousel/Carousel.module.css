@@ -60,15 +60,18 @@
 
 .arrow {
   position: absolute;
+  cursor: pointer;
   z-index: 10;
-  filter: drop-shadow(0px 0px 5px #555);
   width: 2rem;
   height: 2rem;
   color: white;
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
 }
 
 .arrow:hover {
-  cursor: pointer;
+  opacity: 1;
+  filter: drop-shadow(0px 0px 5px #555);
 }
 
 .arrow_left {
