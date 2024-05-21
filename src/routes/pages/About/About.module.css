@@ -74,4 +74,8 @@
     justify-content: center;
     align-items: center;
   }
+
+  .experience_title {
+    text-align: center;
+  }
 }
