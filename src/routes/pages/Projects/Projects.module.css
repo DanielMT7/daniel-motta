@@ -10,6 +10,9 @@
 
 .projects_label {
   margin-bottom: 32px;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .projects_label h1 {
@@ -21,16 +24,31 @@
 .projects_label p {
   font-size: 1rem;
   opacity: 0.7;
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 .project_name {
   padding-left: 6px;
   margin-bottom: 26px;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
 }
 
 .project_name h2 {
   font-size: 1.5rem;
+}
+
+.project_name a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.5s ease 0s;
+}
+
+.project_name a:hover {
+  opacity: 1;
 }
 
 .project_name p {
@@ -42,6 +60,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: dropAnimationReverse 1s forwards;
+  animation-delay: 2.2s;
+  opacity: 0;
 
 }
 
@@ -51,6 +72,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .tags p {
@@ -60,14 +82,30 @@
   background-color: rgba(255, 255, 255, 0.2);
   padding: 4px 6px;
   border-radius: 12px;
+  max-width: 100px;
+  flex-basis: 200;
+}
+
+@keyframes dropAnimationReverse {
+  0% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+@media (max-width: 1280px) {
+  .projects_container {
+    padding: 0 40px;
+  }
+
 }
 
 
 @media (max-width: 760px) {
-  .projects_container {
-
-    padding: 0 40px;
-  }
 
   .projects_label {
     display: flex;

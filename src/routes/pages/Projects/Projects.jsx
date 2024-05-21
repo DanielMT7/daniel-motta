@@ -1,24 +1,41 @@
+import { FaGithub } from 'react-icons/fa'
 import useScreenSize from '../../../hooks/useScreenSize'
 
 import Carousel from '../../../components/Carousel/Carousel'
 
-import { wotsInfo, oneRpmInfo } from '../../../data/mock'
+import { unfinishedProjects, finishedProjects } from '../../../data/mock'
 
 import styles from './Projects.module.css'
 
 function Projects() {
   const isSmallScreen = useScreenSize(760)
 
+  console.log(finishedProjects)
+
   const Project = ({ data }) => {
-    const { title, images, onlyMobileImages, metadata, tags, description } =
-      data
+    console.log(data)
+
+    const {
+      title,
+      linkGit,
+      images,
+      onlyMobileImages,
+      metadata,
+      tags,
+      description
+    } = data
 
     const imagesBySize = isSmallScreen ? onlyMobileImages : images
 
     return (
       <div className={styles.project}>
         <div className={styles.project_name}>
-          <h2>{title}</h2>
+          <a href={linkGit} target="_blank">
+            <h2>
+              <FaGithub size={20} /> {title}
+            </h2>
+          </a>
+
           <p>{description}</p>
         </div>
 
@@ -42,14 +59,18 @@ function Projects() {
         <p>em desenvolvimento</p>
       </div>
 
-      <Project data={wotsInfo} />
+      {unfinishedProjects.map((project, index) => {
+        return <Project data={project} key={index} />
+      })}
 
       <div className={styles.projects_label}>
         <h1>Projetos</h1>
         <p>completos</p>
       </div>
 
-      <Project data={oneRpmInfo} />
+      {finishedProjects.map((project, index) => {
+        return <Project data={project} key={index} />
+      })}
     </div>
   )
 }
