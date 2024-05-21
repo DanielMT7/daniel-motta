@@ -104,7 +104,6 @@
   background-color: grey;
 }
 
-
 @media (max-width: 760px) {
   .metadata {
     justify-content: center;
@@ -115,6 +114,15 @@
 
   .metadata p {
     width: 100%;
+    font-size: 14px;
   }
+}
 
+@media (max-width: 358px) {
+  .metadata {
+    background-color: transparent;
+  }
+  .metadata p {
+    opacity: 0;
+  }
 }
