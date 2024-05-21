@@ -8,41 +8,79 @@ import wotsClotheMobile from '../assets/Wots/clotheMobile.png'
 import oneRpm from '../assets/oneRPM/oneRpm.png'
 import oneRpmMobile from '../assets/oneRPM/oneRpmMobile.png'
 
-// Whats on the Star - Object
-export const wotsInfo = {
-  title: "What's on The Star",
-  images: [wotsHomeMobile, wotsClotheMobile, wotsHome, wotsClothe],
-  onlyMobileImages: [wotsHomeMobile, wotsClotheMobile],
-  tags: ['ReactJS', 'JavaScript', 'HTML', 'CSS'],
-  metadata: {
-    about1:
-      'Features: feed de outfits, lista de favoritos, seção de busca, carrossel de artista/roupas, página de artista, simulação de login e páginas individuais de produtos ',
-    about2:
-      'Todos os componentes são responsivos para todos os tipos de telas.',
-    about3:
-      'As informações estão todas mockadas na aplicação, a lista de favoritos utiliza o localStorage para salvar os Cards com o outfit. '
-  },
-  description:
-    'O objetivo principal é oferecer ao público uma plataforma onde possam descobrir as roupas e acessórios usados por artistas e influenciadores, além de indicar onde adquirir esses itens. Quantas vezes nos identificamos com o estilo de alguém, mas não sabemos onde encontrar aquela peça específica? Este projeto visa justamente preencher essa lacuna, proporcionando inspiração não apenas em termos de moda, mas também de identidade.'
-}
+// Full Stack Challenge - Assets
+import homeFS from '../assets/FSChallenge/homeFS.png'
+import homeFSMobile from '../assets/FSChallenge/homeFSMobile.png'
+import formFS from '../assets/FSChallenge/form.png'
+import formFSMobile from '../assets/FSChallenge/formMobile.png'
 
-// OneRPM Challenge - Object
-export const oneRpmInfo = {
-  title: 'OneRPM Challenge',
-  images: [oneRpmMobile, oneRpm],
-  onlyMobileImages: [oneRpmMobile],
-  tags: ['ReactJS', 'JavaScript', 'HTML', 'CSS'],
-  metadata: {
-    about1:
-      'Features: Lista de músicas disponíveis, informações adicionais, player.',
-    about2:
-      'Todo o layout é responsivo e conta com fluxo e tratamentos de erro. As lógicas dos componentes foram separadas em custom hooks.',
-    about3:
-      'O projeto utiliza a integração com a API do Spotify para consumir os dados.'
+export const unfinishedProjects = [
+  // Whats on the Star - Object
+  {
+    title: "What's on The Star",
+    linkGit: 'https://github.com/DanielMT7/wots-clone',
+    images: [wotsHome, wotsClothe, wotsHomeMobile, wotsClotheMobile],
+    onlyMobileImages: [wotsHomeMobile, wotsClotheMobile],
+    tags: ['ReactJS', 'JavaScript', 'HTML', 'CSS'],
+    metadata: {
+      about1:
+        'Features: feed de outfits, lista de favoritos, seção de busca, carrossel de artista/roupas, página de artista, simulação de login e páginas individuais de produtos ',
+      about2:
+        'Todos os componentes são responsivos para todos os tipos de telas.',
+      about3:
+        'As informações estão todas mockadas na aplicação, a lista de favoritos utiliza o localStorage para salvar os Cards com o outfit. '
+    },
+    description:
+      'O objetivo principal é oferecer ao público uma plataforma onde possam descobrir as roupas e acessórios usados por artistas e influenciadores, além de indicar onde adquirir esses itens. Quantas vezes nos identificamos com o estilo de alguém, mas não sabemos onde encontrar aquela peça específica? Este projeto visa justamente preencher essa lacuna, proporcionando inspiração não apenas em termos de moda, mas também de identidade.'
+  }
+]
+
+export const finishedProjects = [
+  // OneRPM Challenge - Object
+  {
+    title: 'OneRPM Challenge ',
+    linkGit: 'https://github.com/DanielMT7/onerpm-frontend-challenge',
+    images: [oneRpm, oneRpmMobile],
+    onlyMobileImages: [oneRpmMobile],
+    tags: ['ReactJS', 'JavaScript', 'HTML', 'CSS'],
+    metadata: {
+      about1:
+        'Features: Lista de músicas disponíveis, informações adicionais, player.',
+      about2:
+        'Todo o layout é responsivo e conta com fluxo e tratamentos de erro. As lógicas dos componentes foram separadas em custom hooks.',
+      about3:
+        'O projeto utiliza a integração com a API do Spotify para consumir os dados.'
+    },
+    description:
+      'Esse projeto consiste em desenvolver uma aplicação web para resolução de um desafio front-end para um vaga de desenvolvedor de software. Tem como objetivo resolver uma necessidade específica do setor musical: consumir e exibir dados de faixas musicais utilizando o código ISRC (International Standard Recording Code).'
   },
-  description:
-    'Esse projeto consiste em desenvolver uma aplicação web para resolução de um desafio front-end para um vaga de desenvolvedor de software. Tem como objetivo resolver uma necessidade específica do setor musical: consumir e exibir dados de faixas musicais utilizando o código ISRC (International Standard Recording Code).'
-}
+  // Full Stack Challenge - Object
+  {
+    title: 'Full Stack Challenge',
+    linkGit: 'https://github.com/DanielMT7/Fullstack-Challenge',
+    images: [homeFS, formFS, homeFSMobile, formFSMobile],
+    onlyMobileImages: [homeFSMobile, formFSMobile],
+    tags: [
+      'ReactJS',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'API REST'
+    ],
+    metadata: {
+      about1: 'Features: Tabela de produtos, cadastro de produtos',
+      about2:
+        'Ao clicar em alterar, o usuário é redirecionado para mesma página de criação no modo de alteração, onde os dados já estão previamente preenchidos nos campos do form para facilitar caso o usuário precise mudar poucas informações.',
+      about3:
+        'O projeto utiliza a integração com a API construída por mim para consumir os dados. Utilizei o Axios para realizar as requisições HTTP'
+    },
+    description:
+      'O projeto tem como objetivo a criação de um software fullstack como um desafio para aprimorar habilidades de desenvolvimento web. A aplicação consiste em duas telas principais: uma tela para exibição de uma tabela de produtos e outra para cadastro de novos produtos. O foco principal é a construção de uma API REST com operações CRUD completas.'
+  }
+]
 
 // Home skills
 
@@ -85,7 +123,7 @@ export const aboutParagraphs = [
     animationDelay: '2.2s'
   },
   {
-    text: 'Hoje, como principais ferramentas de desenvolvimento, JavaScript e React ocupam lugar de destaque, mas estou sempre em busca de aprimorar minhas habilidades e explorar novas tecnologias que possam melhorar o meu conhecimento técnico e hoje uma das minhas metas principais é se tornar um desenvolvedor fullstack',
+    text: 'Como principais ferramentas de desenvolvimento, JavaScript e React ocupam lugar de destaque, mas estou sempre em busca de aprimorar minhas habilidades e explorar novas tecnologias que possam melhorar o meu conhecimento técnico e hoje uma das minhas metas principais é se tornar um desenvolvedor fullstack',
     animationDelay: '2.8s'
   }
 ]
