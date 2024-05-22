@@ -4,7 +4,7 @@
   margin-top: 32px;
 }
 
-.about{
+.about {
   animation: dropAnimationReverse 1s forwards;
   animation-delay: 1s;
   opacity: 0;
@@ -29,6 +29,11 @@
   opacity: 0;
   text-align: justify;
   margin-bottom: 20px;
+}
+
+
+.text p:nth-child(1) {
+  font-style: italic;
 }
 
 .experience {

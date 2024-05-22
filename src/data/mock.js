@@ -31,7 +31,7 @@ export const unfinishedProjects = [
         'As informações estão todas mockadas na aplicação, a lista de favoritos utiliza o localStorage para salvar os Cards com o outfit. '
     },
     description:
-      'O objetivo principal é oferecer ao público uma plataforma onde possam descobrir as roupas e acessórios usados por artistas e influenciadores, além de indicar onde adquirir esses itens. Quantas vezes nos identificamos com o estilo de alguém, mas não sabemos onde encontrar aquela peça específica? Este projeto visa justamente preencher essa lacuna, proporcionando inspiração não apenas em termos de moda, mas também de identidade.'
+      'A ideia é oferecer ao público uma plataforma onde possam descobrir as roupas e acessórios usados por artistas e influenciadores, além de indicar onde adquirir esses itens. Quantas vezes nos identificamos com o estilo de alguém, mas não sabemos onde encontrar aquela peça específica? Este projeto visa justamente preencher essa lacuna, proporcionando inspiração não apenas em termos de moda, mas também de identidade.'
   }
 ]
 
@@ -52,7 +52,7 @@ export const finishedProjects = [
         'O projeto utiliza a integração com a API do Spotify para consumir os dados.'
     },
     description:
-      'Esse projeto consiste em desenvolver uma aplicação web para resolução de um desafio front-end para um vaga de desenvolvedor de software. Tem como objetivo resolver uma necessidade específica do setor musical: consumir e exibir dados de faixas musicais utilizando o código ISRC (International Standard Recording Code).'
+      'Consiste em uma aplicação web para resolução de um desafio front-end. Tem como objetivo resolver uma necessidade específica do setor musical: consumir e exibir dados de faixas musicais utilizando o código ISRC (International Standard Recording Code).'
   },
   // Full Stack Challenge - Object
   {
@@ -78,7 +78,7 @@ export const finishedProjects = [
         'O projeto utiliza a integração com a API construída por mim para consumir os dados. Utilizei o Axios para realizar as requisições HTTP'
     },
     description:
-      'O projeto tem como objetivo a criação de um software fullstack como um desafio para aprimorar habilidades de desenvolvimento web. A aplicação consiste em duas telas principais: uma tela para exibição de uma tabela de produtos e outra para cadastro de novos produtos. O foco principal é a construção de uma API REST com operações CRUD completas.'
+      'O objetivo é a criação de um software fullstack como um desafio para aprimorar habilidades de desenvolvimento web. A aplicação consiste em duas telas principais: uma tela para exibição de uma tabela de produtos e outra para cadastro de novos produtos. O foco principal é a construção de uma API REST com operações CRUD completas.'
   }
 ]
 
@@ -115,15 +115,15 @@ export const aboutParagraphs = [
     animationDelay: '1s'
   },
   {
-    text: 'Além de ser um entusiasta da tecnologia, sou movido por paixões que vão além dos códigos e dos algoritmos. Desde as quadras de basquete até as horas dedicadas a explorar as últimas tendências do streetwear e dos sneakers, minha jornada é marcada pela busca incessante por experiências autênticas e inspiradoras. Outra grande paixão minha é a música, especialmente o rap, que é a trilha sonora dos meus dias.',
+    text: 'Sou um entusiasta da tecnologia, apaixonado por inovação e desafios. Como desenvolvedor front-end, domino as tecnologias JavaScript e React, e busco me tornar um desenvolvedor fullstack, por isso sigo estudando e me atualizando para impulsionar meu crescimento.',
     animationDelay: '1.6s'
   },
   {
-    text: 'Minha determinação e ambição são os motores que impulsionam meu caminho. Encaro cada desafio como uma oportunidade de crescimento e aprendizado, e vejo na disciplina um aliado fundamental para transformar sonhos em realidade. Acredito que a perseverança é a chave para alcançar objetivos audaciosos e construir um legado duradouro.',
+    text: 'Além dos códigos e algoritmos, o universo do basquete, streetwear e sneakers também são minhas paixões. Sempre estou por dentro dos campeonatos e tendências. Outro hobbie meu é a música, especialmente o rap, que é a trilha sonora dos meus dias.',
     animationDelay: '2.2s'
   },
   {
-    text: 'Como principais ferramentas de desenvolvimento, JavaScript e React ocupam lugar de destaque, mas estou sempre em busca de aprimorar minhas habilidades e explorar novas tecnologias que possam melhorar o meu conhecimento técnico e hoje uma das minhas metas principais é se tornar um desenvolvedor fullstack',
+    text: 'Minha jornada é marcada pela busca incessante por experiências autênticas e inspiradoras. Acredito que a perseverança, consistência e disciplina são as chaves para alcançar objetivos audaciosos e construir um legado duradouro.',
     animationDelay: '2.8s'
   }
 ]

@@ -24,11 +24,11 @@ function About() {
         <h1 className={styles.experience_title}>Experiência</h1>
         <p className={styles.experience_description}>
           Iniciei minha carreira profissional como estagiário na Globo, atuando
-          como desenvolvedor front-end no Globoplay voltado para as Smart TVs,
-          lidando com uma quantidade grande e diversificada de dispositivos, foi
-          um desafio estimulante e enriquecedor que contribuiu com meu
-          conhecimento ao lidar com uma aplicação tão robusta que impacta
-          milhões de brasileiros diariamente.
+          como desenvolvedor front-end no Globoplay, plataforma de streaming.
+          Pude contribuir com a construção e aprimoramento da aplicação para
+          Smart TVs, lidando com uma grande e diversificada base de
+          dispositivos. Foi muito enriquecedor atuar em uma aplicação tão
+          robusta que impacta milhões de brasileiros diariamente.
         </p>
 
         <Card />
