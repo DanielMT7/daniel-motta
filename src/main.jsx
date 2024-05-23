@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Home from './routes/pages/Home/Home.jsx'
 import About from './routes/pages/About/About.jsx'
 import Projects from './routes/pages/Projects/Projects.jsx'
+import NotFound from './components/NotFound/NotFound.jsx'
 
 import './index.css'
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <NotFound />,
     children: [
       {
         path: '/',
