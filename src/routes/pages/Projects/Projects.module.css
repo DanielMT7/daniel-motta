@@ -63,7 +63,8 @@
   animation: dropAnimationReverse 1s forwards;
   animation-delay: 2.2s;
   opacity: 0;
-
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .tags {
@@ -88,25 +89,21 @@
 
 @keyframes dropAnimationReverse {
   0% {
-      transform: translateY(50px);
+    transform: translateY(50px);
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
-
 
 @media (max-width: 1280px) {
   .projects_container {
     padding: 0 40px;
   }
-
 }
 
-
 @media (max-width: 760px) {
-
   .projects_label {
     display: flex;
     flex-direction: column;
@@ -117,5 +114,4 @@
   .project_name h2 {
     text-align: center;
   }
-
 }
