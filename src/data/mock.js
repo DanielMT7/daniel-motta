@@ -1,3 +1,13 @@
+// Sneakers Complex
+import snkHome from '../assets/SneakersComplex/home1.png'
+import snkHomeMobile from '../assets/SneakersComplex/homeMobile.png'
+import snkOffers from '../assets/SneakersComplex/offersPage.png'
+import snkOffersMobile from '../assets/SneakersComplex/offersPageMobile.png'
+import snkShoe from '../assets/SneakersComplex/shoePage.png'
+import snkShoeMobile from '../assets/SneakersComplex/shoePageMobile1.png'
+import snkShoppingCart from '../assets/SneakersComplex/shoppingCart.png'
+import snkShoppingCartMobile from '../assets/SneakersComplex/cartMobile.png'
+
 // Whats on the Star - Assets
 import wotsHome from '../assets/Wots/home.png'
 import wotsHomeMobile from '../assets/Wots/homeMobile.png'
@@ -8,16 +18,73 @@ import wotsClotheMobile from '../assets/Wots/clotheMobile.png'
 import oneRpm from '../assets/oneRPM/oneRpm.png'
 import oneRpmMobile from '../assets/oneRPM/oneRpmMobile.png'
 
+// Photo Gallery
+
+import pgHome from '../assets/PhotoGallery/gallery.png'
+import pgHomeMobile from '../assets/PhotoGallery/galleryMobile.png'
+
 // Full Stack Challenge - Assets
 import homeFS from '../assets/FSChallenge/homeFS.png'
 import homeFSMobile from '../assets/FSChallenge/homeFSMobile.png'
 import formFS from '../assets/FSChallenge/form.png'
 import formFSMobile from '../assets/FSChallenge/formMobile.png'
 
-export const unfinishedProjects = [
+export const unfinishedProjects = []
+
+export const finishedProjects = [
+  // Sneakers Complex
+  {
+    title: 'Sneakers Complex',
+    linkGit: 'https://github.com/DanielMT7/sneakers-complex',
+    images: [
+      snkHome,
+      snkOffers,
+      snkShoe,
+      snkShoppingCart,
+      snkHomeMobile,
+      snkOffersMobile,
+      snkShoeMobile,
+      snkShoppingCartMobile
+    ],
+    onlyMobileImages: [
+      snkHomeMobile,
+      snkOffersMobile,
+      snkShoeMobile,
+      snkShoppingCartMobile
+    ],
+    tags: ['ReactJS', 'TypeScript', 'Tailwind', 'json-server', 'useContext'],
+    metadata: {
+      about1:
+        'O projeto contém produtos das principais marcas do mercado, tais como, Nike, Adidas, New Balance e Asics.',
+      about2:
+        'Design e responsividade desenvolvido com tailwind. O projeto utiliza json-server para armazenar os dados. Diversas funcionalidades incluídas, como, carrinho de compras, filtros e ordenação na busca, sneakers relacionados, dentre outras.',
+      about3:
+        'O carrinho utiliza o useContext para adicionar ou remover os sneakers e o LocalStorage persiste os dados.'
+    },
+    description:
+      'Aplicação web para entusiastas e compradores de tênis. A plataforma oferece uma ampla variedade de tênis, desde marcas populares e conhecidas até edições limitadas exclusivas. O projeto tem como objetivo proporcionar uma experiência de compra fluida e envolvente, com uma interface de usuário intuitiva. Você pode acessar o github para saber todas as funcionalidades que o projeto oferece.'
+  },
+  // Photo Gallery
+  {
+    title: 'Photo Gallery',
+    linkGit: 'https://github.com/DanielMT7/photo-gallery',
+    images: [pgHome, pgHomeMobile],
+    onlyMobileImages: [pgHomeMobile],
+    tags: ['ReactJS', 'TypeScript', 'HTML', 'CSS', 'FireBase', 'uuid'],
+    metadata: {
+      about1:
+        'Funcionalidades: Envio de Fotos: Permite que os usuários carreguem imagens para a galeria. Listagem de Fotos: Exibe uma lista de todas as fotos enviadas. Exclusão de Fotos: Permite que os usuários excluam fotos específicas da galeria.',
+      about2:
+        'Utiliza o Firebase: Plataforma de desenvolvimento de aplicativos da Google que no contexto desse projeto é utilizada para armazenar e gerenciar fotos.',
+      about3:
+        'Utiliza a lib uuid para gerar nomes únicos para imagens que são armazenadas.'
+    },
+    description:
+      'Este é um projeto de galeria de fotos que permite aos usuários carregar imagens, visualizar uma lista de todas as fotos enviadas e deletar fotos. O aplicativo utiliza o Firebase da Google para centralizar e gerenciar as informações.'
+  },
   // Whats on the Star - Object
   {
-    title: "What's on The Star",
+    title: "What's on The Star v1",
     linkGit: 'https://github.com/DanielMT7/wots-clone',
     images: [wotsHome, wotsClothe, wotsHomeMobile, wotsClotheMobile],
     onlyMobileImages: [wotsHomeMobile, wotsClotheMobile],
@@ -31,11 +98,8 @@ export const unfinishedProjects = [
         'As informações estão todas mockadas na aplicação, a lista de favoritos utiliza o localStorage para salvar os Cards com o outfit. '
     },
     description:
-      'A ideia é oferecer ao público uma plataforma onde possam descobrir as roupas e acessórios usados por artistas e influenciadores, além de indicar onde adquirir esses itens. Quantas vezes nos identificamos com o estilo de alguém, mas não sabemos onde encontrar aquela peça específica? Este projeto visa justamente preencher essa lacuna, proporcionando inspiração não apenas em termos de moda, mas também de identidade.'
-  }
-]
-
-export const finishedProjects = [
+      'A ideia é oferecer ao público uma plataforma onde possam descobrir as roupas e acessórios usados por artistas e influenciadores, além de indicar onde adquirir esses itens. Quantas vezes nos identificamos com o estilo de alguém, mas não sabemos onde encontrar aquela peça específica? Este projeto visa justamente preencher essa lacuna, proporcionando inspiração não apenas em termos de moda, mas também de identidade. Pretendo criar uma segunda versão no futuro, em typescript, com teste unitários e um backend completo.'
+  },
   // OneRPM Challenge - Object
   {
     title: 'OneRPM Challenge ',
