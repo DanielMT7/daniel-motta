@@ -151,12 +151,12 @@ export const finishedProjects = [
 export const skills = [
   {
     category: 'Programação',
-    details: 'JavaScript, TypeScript, Node.js, Python, C, C++',
+    details: 'JavaScript, TypeScript, Node.js, Python, C, C++, SQL',
     animationDelay: '4s'
   },
   {
     category: 'FrontEnd',
-    details: 'React, HTML5, CSS3, Bootstrap',
+    details: 'React, HTML5, CSS3, Bootstrap, Tailwind',
     animationDelay: '4.6s'
   },
   {
