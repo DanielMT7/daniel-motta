@@ -3,18 +3,14 @@ import useScreenSize from '../../../hooks/useScreenSize'
 
 import Carousel from '../../../components/Carousel/Carousel'
 
-import { unfinishedProjects, finishedProjects } from '../../../data/mock'
+import { finishedProjects } from '../../../data/mock'
 
 import styles from './Projects.module.css'
 
 function Projects() {
   const isSmallScreen = useScreenSize(760)
 
-  console.log(finishedProjects)
-
   const Project = ({ data }) => {
-    console.log(data)
-
     const {
       title,
       linkGit,
@@ -56,16 +52,6 @@ function Projects() {
     <div className={styles.projects_container}>
       <div className={styles.projects_label}>
         <h1>Projetos</h1>
-        <p>em desenvolvimento</p>
-      </div>
-
-      {unfinishedProjects.map((project, index) => {
-        return <Project data={project} key={index} />
-      })}
-
-      <div className={styles.projects_label}>
-        <h1>Projetos</h1>
-        <p>completos</p>
       </div>
 
       {finishedProjects.map((project, index) => {
