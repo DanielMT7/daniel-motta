@@ -166,7 +166,7 @@ export const skills = [
   },
   {
     category: 'Línguas',
-    details: 'Português Brasileiro, Inglês',
+    details: 'Português Brasileiro, Inglês (B2)',
     animationDelay: '5.8s'
   }
 ]
